@@ -293,7 +293,7 @@ function App() {
 
                 {/* Footer */}
                 <footer className="mt-16 text-center text-white/50 text-sm">
-                    <p>Built with ❤️ for subtitle translation</p>
+                    <p>Built with ❤️ Sithum Buddhika</p>
                 </footer>
             </div>
         </div>
