@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { FileUploader } from './components/FileUploader'
 import { LanguageSelector } from './components/LanguageSelector'
 import { SubtitlePreview } from './components/SubtitlePreview'

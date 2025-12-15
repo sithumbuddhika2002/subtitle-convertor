@@ -1,10 +1,24 @@
 import { app, BrowserWindow, ipcMain, dialog } from 'electron'
 import * as path from 'path'
 import * as fs from 'fs'
+import log from 'electron-log'
+
+// Configure logging
+log.transports.file.level = 'info'
+console.log = log.log
+
+// Handle uncaught exceptions
+process.on('uncaughtException', (error) => {
+    log.error('Uncaught Exception:', error)
+})
 
 let mainWindow: BrowserWindow | null = null
 
 function createWindow() {
+    const iconPath = process.env.VITE_DEV_SERVER_URL
+        ? path.join(__dirname, '../public/icons/icon.png')
+        : path.join(__dirname, '../dist/icons/icon.png')
+
     mainWindow = new BrowserWindow({
         width: 1200,
         height: 800,
@@ -17,7 +31,7 @@ function createWindow() {
         },
         backgroundColor: '#0f172a',
         titleBarStyle: 'default',
-        icon: path.join(__dirname, '../public/icons/icon.png'),
+        icon: iconPath,
     })
 
     // Load the dev server in development or built index.html in production
