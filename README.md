@@ -2,8 +2,6 @@
 
 A professional, modern subtitle converter application with support for Sri Lankan Sinhala language and multiple subtitle formats.
 
-![Subtitle Converter](https://img.shields.io/badge/Version-1.0.0-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 ## ✨ Features
 
@@ -25,28 +23,7 @@ A professional, modern subtitle converter application with support for Sri Lanka
 | SubStation Alpha | `.ssa` | Legacy format with styling |
 | MicroDVD | `.sub` | Frame-based subtitle format |
 
-## 📦 Installation
 
-### For Users
-
-1. Download the latest installer from the [Releases](https://github.com/yourusername/subtitle-converter/releases) page
-2. Run the installer (`Subtitle-Converter-Setup-1.0.0.exe`)
-3. Follow the installation wizard
-4. Launch "Subtitle Converter" from your Start Menu
-
-### For Developers
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/subtitle-converter.git
-cd subtitle-converter
-
-# Install dependencies
-npm install
-
-# Run in development mode
-npm run dev
-```
 
 ## 🎯 Usage
 
@@ -66,46 +43,7 @@ npm run dev
    - Click the "Download" button
    - Choose where to save your converted file
 
-## 🛠️ Development
 
-### Project Structure
-
-```
-subtitle-converter/
-├── electron/           # Electron main process
-│   ├── main.ts        # Main process entry
-│   └── preload.ts     # Preload script
-├── src/
-│   ├── components/    # React components
-│   │   ├── FileUploader.tsx
-│   │   ├── FormatSelector.tsx
-│   │   ├── SubtitlePreview.tsx
-│   │   └── ConversionProgress.tsx
-│   ├── services/      # Business logic
-│   │   ├── SubtitleParser.ts
-│   │   └── SubtitleConverter.ts
-│   ├── types/         # TypeScript types
-│   │   └── subtitle.ts
-│   ├── App.tsx        # Main App component
-│   ├── main.tsx       # React entry point
-│   └── index.css      # Global styles
-├── public/            # Static assets
-└── index.html         # HTML template
-```
-
-### Available Scripts
-
-```bash
-# Development
-npm run dev              # Start development server
-
-# Building
-npm run build            # Build for production
-npm run electron:build   # Create installer
-
-# Preview
-npm run preview          # Preview production build
-```
 
 ### Technologies Used
 
@@ -131,15 +69,6 @@ All subtitle conversions preserve Sinhala characters correctly across all format
 - SUB format uses a default frame rate of 25 FPS
 - Always preview your converted subtitles before using them
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## 📄 License
 
@@ -157,4 +86,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-Made with ❤️ for subtitle conversion
+Made with ❤️ Sithum Buddhika
